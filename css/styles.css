@@ -7,9 +7,9 @@
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 body {
   background-color: rgb(0, 0, 0);
   margin: 0;
@@ -417,6 +417,7 @@ tr td {
   margin-bottom: 35px;
 }
 form {
+  max-width: 100%;
   display: grid;
   margin: 30px 0;
   gap: 10px;
@@ -449,6 +450,10 @@ form > * {
 }
 .activity {
   grid-area: activity;
+}
+select{
+  color: #222222
+  opacity: 0.6;
 }
 
 .meet,
@@ -580,11 +585,8 @@ hr {
   body {
     max-width: 576px;
   }
-  section {
-    width: 50vh;
-  }
   header {
-    width: calc(576px-40px);
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -600,5 +602,265 @@ hr {
   }
   header nav span {
     display: flex;
+    justify-content: center;
+    justify-items: center;
   }
+  .banner-content {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    margin: 0 auto;
+  }
+  section > .left {
+    margin: 0 auto;
+  }
+  section > .left > h2 {
+    width: 70%;
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  section > .left > p {
+    width: 70%;
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .button-container {
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  button {
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 15px 25px;
+    border-radius: 40px;
+    width: 48%;
+  }
+  .second-btn {
+    font-weight: 400;
+  }
+  section > .right {
+    background-position: top;
+    background-size: inherit;
+    display: flex;
+    width: 90%;
+    max-height: 600px;
+  }
+  .top {
+    position: relative;
+    top: -20%;
+    left: 25%;
+  }
+
+  .bottom {
+    top: 12%;
+    left: -10%;
+  }
+  .big-title {
+    font-size: 2.5em;
+  }
+  .small-title {
+    width: 80%;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  main section > .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .big-font-size {
+    font-size: 1.4em;
+  }
+  .small-font-size {
+    font-size: 1em;
+    font-weight: 300;
+  }
+  .Run {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .run-description {
+    width: 100%;
+    height: fit-content;
+  }
+  .run-description > h3 {
+    width: 70%;
+  }
+  .run-description > p {
+    width: 90%;
+    font-weight: 300;
+    font-size: 1em;
+  }
+  .run-description > button {
+    width: 90%;
+    font-weight: 400;
+    font-size: 1.4em;
+  }
+  .image {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.8em;
+    background-size: cover;
+  }
+  .image {
+    height: 250px;
+    background-size: 140%;
+    background-position: -150px 0px;
+  }
+  .Training {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .left-description {
+    width: 80%;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px 0px;
+  }
+  .Training-figures {
+    height: 300px;
+  }
+  .item6,
+  .item3 {
+    display: none;
+  }
+  .item1 {
+    grid-column: 1 / span 7;
+    background-position: -27px -0px;
+    background-size: 100% 55%;
+  }
+  .item2 {
+    grid-column: 7 / span 12;
+    background-position: -260px -65px;
+    background-size: 260% 125%;
+  }
+
+  .item4 {
+    grid-column: 1 / span 6;
+    background-position: -100px -10px;
+    background-size: 190% 180%;
+  }
+  .item5 {
+    grid-column: 6 / span 13;
+    background-position: -0px -30px;
+    background-size: 100% 140%;
+  }
+  .bmi-title {
+    margin: 0 auto;
+    width: 100%;
+    margin: 5%;
+  }
+  .bmi-chart {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+  }
+  .chart {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .chart > table {
+    width: 90%;
+  }
+  th,
+  td {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .calculator {
+    margin: 0 auto;
+    width: 90%;
+  }
+  form {
+    width: 100%;
+  }
+  .Height,
+  .Weight,
+  .Age {
+    width: 85%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .Sex {
+    width: 93%;
+  }
+  .activity {
+    width: 97%;
+  }
+  input,
+  select {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 15px;
+  }
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+.btn{
+    width: 60%;
+  }
+.meet{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.meet-description{
+  width: 100%;
+}
+.meet-description>.small-title{
+  width: 80%;
+  text-align: center;
+  font-size: 1em;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-weight: 300;
+  
+}
+.gallery {
+  /* padding: 15px;
+  margin: 0 0; */
+  width: calc(100%-90px);
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  background-color: rgba(80, 79, 79, 0.397);
+}
+.images {
+  background-size: cover;
+  background-position: center;
+  justify-content: end;
+  justify-items: flex-start;
+  padding-bottom: 16px;
+  padding-left: 19px;  
+  background-size: 110% 110%;
+}
+.img4,
+.img1 {
+  display: none;
+}
+.footer{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.footer-content{
+  flex-direction: column;
+  padding: 20px 10px;
+}
+.mission{
+  width: 80%;
+}
+.quick-link, .quick-link-1{
+  width: 100%;
+  margin:  0 auto;
+
+}
+.quick-link{
+  flex-direction: column;
+}
 }
